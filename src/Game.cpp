@@ -44,7 +44,7 @@ void Game::begin(size_t mines)
             if (_number_of_mines >= mines)
                 break;
         }
-    } 
+    }
     while (_number_of_mines < mines);
     for (size_t i = 0; i < _Grid.size(); i++)
         for (size_t j = 0; j < _Grid[i].size(); j++)
@@ -107,11 +107,11 @@ void Game::draw()
 }
 int Game::get_width()
 {
-    return 1;
+    return _width;
 }
 int Game::get_height()
 {
-    return 1;
+      return _height;
 }
 bool Game::has_lost()
 {
